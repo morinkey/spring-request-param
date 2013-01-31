@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HomeController {
 
     /**
-     * パラメータを受け取るメソッドです
+     * ブラウザで、以下URLで実行して下さい。
+     * JSONが返却されます。
+     * http://localhost:8080/spring-request-param/test/?data='test'&count=2
+     * 
      */
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public String home(@RequestParam("data") String data,
